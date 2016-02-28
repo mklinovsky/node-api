@@ -1,0 +1,11 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "description": "NodeJs API",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "author": "mklinovsky",
+  "license": "MIT"
+}
