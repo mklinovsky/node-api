@@ -2,10 +2,13 @@
   "name": "nodeapi",
   "version": "1.0.0",
   "description": "NodeJs API",
-  "main": "index.js",
-  "scripts": {
-    
-  },
+  "main": "server.js",
+  "scripts": {},
   "author": "mklinovsky",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^5.7.0"
+  }
 }
