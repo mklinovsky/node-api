@@ -5,6 +5,7 @@ var config = require('../../config');
 router.post('/', function (req, res) {
 	
 	//find user in db
+	
 	var user = {
 		id: 1,
 		username: 'username',

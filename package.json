@@ -1,14 +1,17 @@
 {
-  "name": "nodeapi",
+  "name": "node-api",
   "version": "1.0.0",
   "description": "NodeJs API",
   "main": "server.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node server.js"
+    },
   "author": "mklinovsky",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
+    "express-unless": "^0.3.0",
     "jsonwebtoken": "^5.7.0"
   }
 }

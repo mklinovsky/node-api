@@ -24,4 +24,6 @@ function authorizationMiddleware (req, res, next) {
 	}
 }
 
+authorizationMiddleware.unless = require('express-unless');
+
 module.exports = authorizationMiddleware;
