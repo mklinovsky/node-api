@@ -1,16 +1,16 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var userRoutes = require('./routes/users');
-var authenticateRoute = require('./routes/authenticate');
-var authorization = require('./middlewares/authorization');
-var security = require('./middlewares/security');
-var config = require('../config');
-var app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const userRoutes = require('./routes/users');
+const authenticateRoute = require('./routes/authenticate');
+const auth = require('./middlewares/authentication');
+const security = require('./middlewares/security');
+const config = require('../config');
+const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(security);
-app.use(authorization.unless({
+app.use(auth.unless({
 	path: config.authenticationUrl
 }));
 

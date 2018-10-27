@@ -1,9 +1,9 @@
-var router = require('express').Router();
-var jwt = require('jsonwebtoken');
+const router = require('express').Router();
+const jwt = require('jsonwebtoken');
 
 router.get('/', function (req, res) {
 
-	var users = [{
+	const users = [{
 		username: 'username_1'
 	},{
 		username: 'username_2'
